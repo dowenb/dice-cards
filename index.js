@@ -1,12 +1,6 @@
-exports.printMsg = function () {
-    console.log("This is a message from dice-cards package");
-}
-
 exports.deck = function () {
     const d6 = [1, 2, 3, 4, 5, 6]
     let cards = []
-
-    console.log("Building deck of 2d6 dice throws");
 
     for (let i = 0; i < d6.length; i++) {
         for (let j = 0; j < d6.length; j++) {
