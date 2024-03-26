@@ -1,4 +1,10 @@
-export function deck(numberOfDecks = 5) {
+export function deck(numberOfDecks = 5, shouldShuffle = true) {
+    
+    if (typeof numberOfDecks !== 'number') {
+        shouldShuffle = numberOfDecks; // Shift arguments if only one provided
+        numberOfDecks = 5; // Set default value for numberOfDecks
+    }
+    
     const dice6 = [1, 2, 3, 4, 5, 6];
     let cards = [];
 
@@ -25,10 +31,14 @@ export function deck(numberOfDecks = 5) {
     const repeatedDeck = repeatDeck(cards, numberOfDecks);
 
     // Shuffle the repeated deck to randomise order.
-    const shuffledRepeatedDeck = shuffleArray(repeatedDeck);
+    //const shuffledRepeatedDeck = shuffleArray(repeatedDeck);
+
+    if (shouldShuffle) {
+        shuffleArray(repeatedDeck);
+    }
 
     //Return (output) the shuffled deck
-    return shuffledRepeatedDeck;
+    return repeatedDeck;
 
 }
 
