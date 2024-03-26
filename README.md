@@ -2,7 +2,8 @@
 
 ### A fairer way to provide 2d6 dice rolls!
 
-This GitHub project focuses on enhancing the gaming experience of Settlers of Catan, a board game where players build settlements and cities on a board with numbered tiles representing resources. Players roll 2d6 (2 6-sided dice) to determine which tiles produce resources each turn.
+This GitHub project focuses on enhancing the gaming experience of games that roll 2 6-sided dice (2d6).
+For example, Settlers of Catan is a board game where players build settlements and cities on a board with numbered tiles representing resources. Players roll 2d6 to determine which tiles produce resources each turn.
 
 To mitigate the potential frustration of random dice rolls and the risk of detrimental streaks impacting gameplay, the project proposes using a deck of cards representing all possible dice roll combinations (2-12) to ensure a more balanced distribution of resources over time. However, using just one deck can lead to predictability, so the concept is extended to incorporate multiple decks. By employing 'n' decks, each containing cards representing different dice roll combinations, the project aims to reintroduce an element of unpredictability while still maintaining overall distribution balance.
 

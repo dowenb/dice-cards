@@ -1,6 +1,5 @@
-export default function multiDeck() {
+export function deck(numberOfDecks) {
     const dice6 = [1, 2, 3, 4, 5, 6];
-    const numberOfDecks = 5; //<-- This is how many times the deck gets repeated
     let cards = [];
 
     for (let die1Index = 0; die1Index < dice6.length; die1Index++) {
@@ -52,7 +51,7 @@ function sumDice(die1, die2) {
 }
 
 // Function to repeat the deck 'n' times
-function repeatDeck(deck, n) {
+export function repeatDeck(deck, n) {
     let repeatedDeck = [];
     for (let deckCount = 0; deckCount < n; deckCount++) {
         repeatedDeck = repeatedDeck.concat(deck);
@@ -61,7 +60,7 @@ function repeatDeck(deck, n) {
 }
 
 // Function to shuffle an array (uses the Fisher-Yates (aka Knuth) Shuffle algorithm.)
-function shuffleArray(array) {
+export function shuffleArray(array) {
     // Loop through the array starting from the last element
     for (let cardCount = array.length - 1; cardCount > 0; cardCount--) {
         // Generate a random index between 0 and the value of cardCount (inclusive)
