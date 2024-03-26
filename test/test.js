@@ -2,8 +2,12 @@ import { deck } from '../src/index.js';
 
 //OUTPUT TOTAL NUMBER OF CARDS
 //The code below will output the total number of cards within the deck array.
-const cardDeck = deck(5);
-console.log(`Total number of cards in the deck:\n${cardDeck.length}`)
+const cardDeck = deck();
+console.log(`Total number of cards in the deck (default value):\n${cardDeck.length}`)
+console.log("----------------------------------------")
+
+const cardDeck2 = deck(2);
+console.log(`Total number of cards in the deck (2 passed as arg):\n${cardDeck2.length}`)
 console.log("----------------------------------------")
 
 //---------------------------------------------------------------------------------------------------------

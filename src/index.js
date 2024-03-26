@@ -1,4 +1,4 @@
-export function deck(numberOfDecks) {
+export function deck(numberOfDecks = 5) {
     const dice6 = [1, 2, 3, 4, 5, 6];
     let cards = [];
 
