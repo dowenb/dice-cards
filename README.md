@@ -5,21 +5,23 @@
 This GitHub project focuses on enhancing the gaming experience of games that roll 2 6-sided dice (2d6).
 For example, Settlers of Catan is a board game where players build settlements and cities on a board with numbered tiles representing resources. Players roll 2d6 to determine which tiles produce resources each turn.
 
-To mitigate the potential frustration of random dice rolls and the risk of detrimental streaks impacting gameplay, the project proposes using a deck of cards representing all possible dice roll combinations (2-12) to ensure a more balanced distribution of resources over time. However, using just one deck can lead to predictability, so the concept is extended to incorporate multiple decks. By employing 'n' decks, each containing cards representing different dice roll combinations, the project aims to reintroduce an element of unpredictability while still maintaining overall distribution balance.
+To mitigate the potential frustration of random dice rolls and the risk of detrimental streaks impacting game play, the project proposes using a deck of cards representing all possible dice roll combinations (2-12) to ensure a more balanced distribution of resources over time.
+
+However, using just one deck can lead to predictability, so the concept is extended to incorporate multiple decks. By employing 'n' decks, each containing cards representing different dice roll combinations, the project aims to reintroduce an element of unpredictability while still maintaining overall distribution balance.
 
 ## What works so far
 
 ```
-const diceCards = require('dice-cards')
+import { deck } from 'dice-cards';
 
 # Get a new deck of dice cards
 # A deck is an array of card objects
 # each card has 3 elements, die1, die2 and sum
-const deck = diceCards.deck()
+const cardDeck = deck();
 
 # Get a card from a random place in the deck
 # This assigns 1 card to the variable randomCard and removes it from the deck
-const randomCard = deck.splice(Math.floor(Math.random() * deck.length), 1)
+const randomCard = cardDeck.splice(Math.floor(Math.random() * cardDeck.length), 1)
 
 
 console.log(randomCard)
