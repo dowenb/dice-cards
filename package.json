@@ -4,7 +4,7 @@
   "description": "Well distributed 2d6 dice rolls",
   "main": "./src/index.js",
   "type": "module",
-  "typings": "./src/index.d.ts",
+  "types": "./src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
