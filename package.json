@@ -1,6 +1,6 @@
 {
   "name": "dice-cards",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Well distributed 2d6 dice rolls",
   "main": "index.js",
   "type": "module",
