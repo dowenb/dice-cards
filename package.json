@@ -1,22 +1,11 @@
 {
   "name": "dice-cards",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "description": "Well distributed 2d6 dice rolls",
-  "main": "./src/index.js",
-  "module": "./src/index.js",
+  "main": "index.js",
+  "module": "index.js",
   "type": "module",
-  "types": "./src/index.d.ts",
-  "typings": "./src/index.d.ts",
-  "typesVersions": {
-    "*" : {
-      "src/index.d.ts": ["src/index.d.ts"],
-      "*": ["./src/*"]
-    }
-  },
-  "exports": {
-    ".": "./src/index.js",
-    "./": "./src/"
-  },
+  "types": "index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
